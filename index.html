@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodie: The weather App</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false" class="search-input">
+        <button class="search-button">
+          <img src="images/search.svg">
+        </button>
+      </div>
+      <div class="error"></div>
+      <div class="weather">
+        <img src="/images/sunny.png" class="weather-icon">
+        <h1 class="temp"></h1>
+        <h2 class="main-weather"></h2>
+        <div class="location">
+          <img src="/images/location.png" class="location-icon">
+          <h2 class="city"></h2>
+        </div>
+      </div>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png">
+          <div>
+            <p class="humidity"></p>
+            <p class="text">Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+           <img src="/images/temperature.png ">
+          <div>
+            <p class="feels-like"></p>
+            <p class="text">Feels like</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="/images/wind.png">
+          <div>
+            <p class="wind"></p>
+            <p class="text">Wind speed</p> 
+          </div>
+        </div>
+        <div class="col">
+          <img src="/images/meteorology.png">
+          <div>
+            <p class="pressure"></p>
+            <p class="pressure-text">Pressure</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Music">
+      <h1>Music to fit today's mood</h1>
+      <div id="playlist"></div>
+    </div>
+  </div>
+
+  <!-- <script src="app.js"></script> -->
+  <script src="spotify.js"></script>
+</body>
+</html>
